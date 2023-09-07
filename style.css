@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: .8s;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.ttf);
+}
+
+body {
+    display: flex;
+    transition: .8s;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+/* .application-menu {
+    transform: scale(1.6);
+} */
+
+.iphone-frame {
+    background-color: #fff;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    border: 8px solid #000;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0px #333;
+}
+
+.iphone-frame .norch {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 24px;
+    width: 100px;
+    background-color: #000;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.norch .rounded {
+    position: relative;
+}
+
+.app-container .bg-img .bg-frame {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(239, 187, 109, 0.93);
+}
+
+.nav {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    z-index: 101;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav .right {
+    padding-right: 15px;
+}
+
+.nav .right ion-icon {
+    color: #fff;
+    font-size: 14px;
+}
+
+.active {
+    z-index: 199;
+}
+
+.lock-screen {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    transition: .8s;
+    overflow: hidden;
+    left: 0;
+    height: 0%;
+    width: 100%;
+}
+
+.lock-screen {
+    height: 100% !important;
+}
+
+.lock-screen .location {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.lock-screen .location h2 {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.lock-screen .location h6 {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.checklist {
+  position: absolute;
+  top: 115px;
+  left: 6px;
+  width: 95%;
+  height: 110px;
+  border-radius: 5px;
+  background-color: rgba(81, 64, 64, 0.35);
+}
+
+.hourly-weather {
+  position: absolute;
+  top: 230px;
+  left: 6px;
+  width: 95%;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgba(81, 64, 64, 0.35);
+}
+
+.hourly-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hour p {
+    margin: 0; 
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.hour img {
+    margin: 0;
+    max-width: 28px;
+    max-height: 28px; 
+}
+
+.hourly-weather .hour {
+    width: 16%; 
+    height: 60px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(247, 131, 25, 0.41); 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.lock-screen .weekly-forcast {
+  position: absolute;
+  top: 295px;
+  left: 6px;
+  width: 95%;
+  height: 80px;
+  border-radius: 5px;
+  background-color: rgba(81, 64, 64, 0.35);
+}
+
+.lock-screen .weather-map {
+  position: absolute;
+  top: 380px;
+  left: 6px;
+  width: 95%;
+  height: 150px;
+  border-radius: 5px;
+  background-color: rgba(81, 64, 64, 0.35);
+}
+
+.lock-screen .sunny {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 134px;
+  top: 0px;
+  background: url("Sun.png");
+  background-size: contain;
+}
+
+.weekly-forcast .line1 {
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    left: 31px;
+    top:10px;
+    color:2px solid rgba(0, 0, 0, 0.13);
+}
+
+.weekly-forcast .line2 {
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    left: 31px;
+    top: 35px;
+    color:2px solid rgba(0, 0, 0, 0.13);
+}
+
+.weekly-forcast .line3 {
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    left: 31px;
+    top: 60px;
+    color:2px solid rgba(0, 0, 0, 0.13)
+}
+
+.weekly-forcast .line4 {
+    position: absolute;
+    width: 0px;
+    height: 35px;
+    left: 155px;
+    top: 23px;
+    border-style: 2px dashed #FFFFFF;
+}
+
+.weekly-forcast .svg1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 150px;
+    top: 20px;
+}
+.weekly-forcast .svg2 {
+    position: absolute;
+    width: 49px;
+    height: 21px;
+    left: 132px;
+    top: 0px;
+}
+
+
+.weekly-forcast .img1 {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 31px;
+    top: 23px;
+    border-width:10;
+}
+
+.weekly-forcast .text1 {
+    position: absolute;
+    top: 64px;
+    left: 32px;
+    font-size: 9px;
+    color: #FFFFFF;
+}
+
+.weekly-forcast .text2 {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.weekly-forcast .text3 {
+    position: absolute;
+    top: 53px;
+    left: 7px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.weekly-forcast .text4 {
+    position: absolute;
+    top: 29px;
+    left: 7px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.weekly-forcast .img2 {
+    position: absolute;
+    width: 30px;
+    height: 13px;
+    left: 141px;
+    top: 5px;
+    border-width:10;
+}
+
+.weekly-forcast .text5 {
+    position: absolute;
+    top: 6px;
+    left: 149px;
+    font-size: 9px;
+    color: #3b3535;
+}
+
+.weather-map .mapimg {
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    left: 6px;
+    top: 5px;
+    border-radius: 5px;
+}
