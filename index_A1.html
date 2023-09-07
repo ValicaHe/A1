@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css" />
-    <title>Iphone Clone</title>
+    <title>Weather App</title>
 </head>
 
 <body>
@@ -36,40 +36,63 @@
             <div class="location">
                 <h2>Philadelphia</h2>
                 <h6>Sunny| H:30° L:22°</h6>
+                <h1>28°</h1>
             </div>
             <div class="checklist">
+                <div class="checkbox-frame">
+                    <div class="check">
+                        <img src="icons/checkbox_done.png">
+                        <s>Umbrella</s>
+                    </div>
+                    <div class="check">
+                        <img src="icons/checkbox.png">
+                        <p>Jacket</p>
+                    </div>
 
+                    <div class="check">
+                        <img src="icons/checkbox.png">
+                        <p>Mask</p>
+                    </div>
+                    <div class="check">
+                        <img src="icons/checkbox.png">
+                        <p>Water Bottle</p>
+                    </div>
+                </div>
+                <img class="ss_img" src="icons/sunscreen.png">
+                <img class="shirt_img" src="icons/shirt.png">
+                <img class="pants_img" src="icons/pants.png">
+                <img class="jacket_img" src="icons/down-jacket.png">
             </div>
             <div class="hourly-weather">
                 <div class="hourly-frame">
                     <div class="hour">
                         <p>12PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                     <div class="hour">
                         <p>1PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                     <div class="hour">
                         <p>2PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                     <div class="hour">
                         <p>3PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                     <div class="hour">
                         <p>4PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                     <div class="hour">
                         <p>5PM</p>
-                        <img src="Cloudy.png" alt="cloudy">
+                        <img src="icons/Cloudy.png" alt="cloudy">
                         <p>25°C</p>
                     </div>
                 </div>
@@ -80,7 +103,7 @@
                 <hr class="line2">
                 <hr class="line3">
                 <hr class="line4">
-                <img class="img1" src="Line.png">
+                <img class="img1" src="icons/Line.png">
                 <h2 class="text1"> SEP6 SEP7 SEP8 SEP9 SEP10 SEP11 SEP12 SEP13 </h2>
                 <h2 class="text2">28°</h2>
                 <h2 class="text3">25°</h2>
@@ -90,46 +113,18 @@
                         d="M13 6C13 8.62236 10.4639 11 7 11C3.53612 11 1 8.62236 1 6C1 3.37764 3.53612 1 7 1C10.4639 1 13 3.37764 13 6Z"
                         fill="#F78319" fill-opacity="0.8" stroke="white" stroke-width="1.5" />
                 </svg>
-                <img class="img2" src="Rectangle.png">
+                <img class="img2" src="icons/Rectangle.png">
                 <h2 class="text5">27°</h2>
             </div>
             <div class="weather-map">
-                <img class="mapimg" src="Precipitation.jpg">
+                <img class="mapimg" src="icons/Precipitation.jpg">
             </div>
-
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="forecast-chart">
-            <!-- 14-day weather forecast chart goes here -->
         </div>
     </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        var chrt = document.getElementById("temperature-chart").getContext("2d");
-        var chartId = new Chart(chrt, {
-            type: 'line',
-            data: {
-                labels: ["SEP 6", "SEP 7", "SEP 8", "SEP 9", "SEP 10", "SEP 11"],
-                datasets: [{
-                    label: "online tutorial subjects",
-                    data: [83, 90, 78, 74, 86, 85],
-                    backgroundColor: ['yellow', 'aqua', 'pink', 'lightgreen', 'lightblue', 'gold'],
-                    borderColor: ['GREY'],
-                    borderWidth: 2,
-                    pointRadius: 3,
-                }],
-            },
-            options: {
-                responsive: false,
-            },
-        });
-    </script> -->
 </body>
 
 </html>
